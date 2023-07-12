@@ -1,0 +1,12 @@
+
+@media screen and (max-width:400px) {
+    .post-div{
+        width: 300px;
+        height: 280px;
+    }
+    .post-img{
+        width: fit-content;
+        height: fit-content;
+        object-fit: cover;
+    }
+}

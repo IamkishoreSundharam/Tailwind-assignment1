@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://kit.fontawesome.com/180075e6a3.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,200,0,0" />
+</head>
+<body>
+  <!-- MAIN HEADER -->
+  <header class="border-b pb-3">
+    <nav class="flex items-center justify-between w-[92%] mx-auto">
+
+      <div class="toggle-bar">
+        <i class="fa-solid fa-bars text-lg cursor-pointer"></i>
+      </div>
+
+      <h1 class="text-2xl font-bold ">READER</h1>
+
+      <div class="acc-info mt-2 flex justify-center items-center">
+
+        <i class="fa-regular fa-bell text-2xl mr-4 cursor-pointer"></i>
+        
+        <div class="acc-img w-12 h-12  rounded-full mr-3 cursor-pointer">
+          <img class="rounded-full w-10 h-10 object-cover border border-black p-0.5 mt-1" src="./images/acc-img.jpg" alt="avatar">
+        </div>
+        
+        <div class="flex items-center justify-center w-22 rounded border p-2 mr-3 cursor-pointer">
+          <i class="fa-regular fa-pen-to-square"></i> 
+          <p class="text-md font-bold ml-2">Write</p>
+        </div>
+
+      </div>
+
+    </nav>
+  </header>
+
+  <!-- CONTENT -->
+  
+  <section class="flex flex-col md:flex-row">
+
+    <!-- FIRST CHILD -->
+    <div class="first-child border-r basis-8/12 h-fit">
+       
+       <!-- FIRST NAV -->
+
+       <nav class="first-nav w-[92%] flex flex-col  justify-between items-center   xl:flex-row mt-8 mx-auto">
+
+         <form>
+           <div class="relative flex items-center text-gray-400 focus-within:text-black mb-3">
+             
+            <span class="material-symbols-outlined absolute ml-3 pointer-events-none">
+              search
+              </span>  
+
+             <input type="text" placeholder="Search" class="pr-3 pl-10 px-3 py-2 rounded-3xl border border-gray-400 ">
+             
+           </div>
+         </form>
+        
+         <p class="hidden sm:block mb-3">My topics:</p>
+        
+         <ul class=" hidden sm:flex ">
+          
+          <li class="mr-3">
+            <button class="border rounded-3xl px-3 py-2 bg-gray-200  ">Design</button>
+          </li>
+          <li class="mr-3">
+            <button class="border rounded-3xl px-3 py-2 bg-gray-200">Development</button>
+          </li>
+          <li class="mr-3">
+            <button class="border rounded-3xl px-3 py-2 bg-gray-200 w-16">ux</button>
+          </li>
+          <li class="mr-3">
+            <button class="border rounded-3xl px-3 py-2 bg-gray-200">Marketing</button>
+          </li>
+
+         </ul>
+       </nav>
+
+       <!-- SECOND NAV -->
+
+       <nav class="mt-10 w-[92%] mx-auto border-b pb-5">
+         <article class="flex justify-between items-center">
+          <h2 class="text-xl font-bold">Article</h2>
+         
+          <div class="flex items-center justify-center border rounded-3xl px-3 py-2 cursor-pointer">
+            <p>Following</p>
+            <i class="fa-solid fa-caret-down ml-2"></i>
+          </div>
+
+         </article>
+       </nav>
+
+      <!-- ARTICLES -->
+      <article class="w-[92%] mx-auto mt-4 pb-8 border-b">
+          <!-- POST-INFO -->
+         <div class="flex">
+            <div class="w-12 h-12 rounded-full">
+               <img class="w-10 h-10 object-cover rounded-full border border-black" src="./images/acc-img.jpg" alt="avatar">
+            </div>
+
+            <div>
+                <h3 class="text-md font-bold">Chintan bhatt <span class="text-sm text-gray-400">Apr 16, 2022</span></h3>
+                <p class="text-sm text-gray-500">The founder & chief dsigner at YourUXTeam</p>
+            </div>
+           
+            
+         </div>
+
+         <!-- POST DESCRIPTION -->
+         <div class="mt-4 flex flex-col-reverse  items-center lg:flex-row">
+           <div class="basis-8/12">
+            <h1 class="text-xl font-bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit et ut repellat.</h1>
+            <p class="text-sm text-gray-500 mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolorem laboriosam sunt accusantium sapiente iure optio accusamus omnis minus nisi! Excepturi mollitia consequatur nam quos facilis tenetur magni. Ut iusto voluptatibus impedit ratione ea modi nostrum dolorum cumque quod, commodi quasi minus, mollitia sunt nisi quo cum neque a repellat!</p>
+           </div>
+
+           <div class="mt-2 w-80 border rounded basis-4/12 mb-5 post-div">
+               <img class="object-cover rounded mx-auto post-img" src="./images/james-mckinven-tpuAo8gVs58-unsplash.jpg" alt="">
+           </div>
+        </div>
+
+        <div class="w-64 mt-3">
+          <ul class="flex justify-between items-center">
+            <li class="rounded-full bg-gray-300 px-3 py-2 text-sm cursor-pointer">
+              UX design
+            </li>
+            <li class="rounded-full bg-gray-300 px-3 py-2 text-sm cursor-pointer">
+              4 min read
+            </li>
+          </ul>
+        </div>
+        
+      </article>
+
+      <article class="w-[92%] mx-auto mt-4 pb-8 border-b">
+        <!-- POST-INFO -->
+       <div class="flex">
+          <div class="w-12 h-12 rounded-full">
+             <img class="w-10 h-10 object-cover rounded-full border border-black" src="./images/acc-img.jpg" alt="avatar">
+          </div>
+
+          <div>
+              <h3 class="text-md font-bold">Chintan bhatt <span class="text-sm text-gray-400">Apr 16, 2022</span></h3>
+              <p class="text-sm text-gray-500">The founder & chief dsigner at YourUXTeam</p>
+          </div>
+         
+          
+       </div>
+
+       <!-- POST DESCRIPTION -->
+       <div class="mt-4 flex flex-col-reverse  items-center lg:flex-row">
+         <div class="basis-8/12">
+          <h1 class="text-xl font-bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit et ut repellat.</h1>
+          <p class="text-sm text-gray-500 mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolorem laboriosam sunt accusantium sapiente iure optio accusamus omnis minus nisi! Excepturi mollitia consequatur nam quos facilis tenetur magni. Ut iusto voluptatibus impedit ratione ea modi nostrum dolorum cumque quod, commodi quasi minus, mollitia sunt nisi quo cum neque a repellat!</p>
+         </div>
+
+         <div class="mt-2 w-80 border rounded basis-4/12 mb-5 post-div">
+             <img class="object-cover rounded mx-auto post-img" src="./images/james-mckinven-tpuAo8gVs58-unsplash.jpg" alt="">
+         </div>
+      </div>
+      
+      <div class="w-64 mt-3">
+        <ul class="flex justify-between items-center">
+          <li class="rounded-full bg-gray-300 px-3 py-2 text-sm cursor-pointer">
+            UX design
+          </li>
+          <li class="rounded-full bg-gray-300 px-3 py-2 text-sm cursor-pointer">
+            4 min read
+          </li>
+        </ul>
+      </div>
+
+    </article>
+
+    </div>
+
+    <!-- SECOND CHILD -->
+    
+    <div class="second-chid basis-4/12 h-20 ">
+       <!-- ADD -->
+       <div class="flex w-[90%] mx-auto rounded-2xl bg-gray-200 p-2 pb-5 mt-10">
+         <article class="basis-8/12">
+            <h3 class="text-xl font-bold mt-1">Get unlimited access to everything on Reader</h3>
+
+            <p class="text-sm text-gray-500 mt-2 mb-2">Plans starting at less than $1/week.</p>
+
+            <button class="px-3 py-2 text-sm rounded-2xl bg-gray-300 mx-auto mt-2">Get Unlimited access</button>
+         </article>
+
+         <article class="basis-4/12">
+            <img class="w-24 h-30 object-cover" src="./images/notepad.png" alt="">
+         </article>
+       </div>
+
+       <!-- PEOPLE SUGGESTIONS -->
+       <section class="w-[80%] mx-auto mt-10">
+         <h3 class="text-xl font-bold mt-1">People you might be interested</h3>
+
+         <div class="mt-3">
+
+           <article class="flex justify-between  items-center mb-2">
+
+             <div class="flex">
+
+                <div class="w-12 h-12 rounded-full my-auto">
+                   <img class="w-12 h-12 object-cover rounded-full border border-black" src="./images/acc-img.jpg" alt="">
+                </div>
+
+                <div class="ml-2 w-64">
+                  <h4 class="lg font-bold">Chintan bhatt</h4>
+                  <p class="text-sm text-gray-600">The founder & chief dsigner at YourUXTeam</p>
+                </div>
+
+             </div>
+             <div>
+               <button class="text-sm border rounded-full px-3 py-2">Follow</button>
+             </div>
+
+           </article>
+
+           <article class="flex justify-between  items-center mb-2">
+
+            <div class="flex">
+
+               <div class="w-12 h-12 rounded-full my-auto">
+                  <img class="w-12 h-12 object-cover rounded-full border border-black" src="./images/acc-img.jpg" alt="">
+               </div>
+
+               <div class="ml-2 w-64">
+                 <h4 class="lg font-bold">Chintan bhatt</h4>
+                 <p class="text-sm text-gray-600">The founder & chief dsigner at YourUXTeam</p>
+               </div>
+
+            </div>
+            <div>
+              <button class="text-sm border rounded-full px-3 py-2">Follow</button>
+            </div>
+
+           </article>
+
+           <article class="flex justify-between  items-center mb-2">
+
+          <div class="flex">
+
+             <div class="w-12 h-12 rounded-full my-auto">
+                <img class="w-12 h-12 object-cover rounded-full border border-black" src="./images/acc-img.jpg" alt="">
+             </div>
+
+             <div class="ml-2 w-64">
+               <h4 class="lg font-bold">Chintan bhatt</h4>
+               <p class="text-sm text-gray-600">The founder & chief dsigner at YourUXTeam</p>
+             </div>
+
+          </div>
+          <div>
+            <button class="text-sm border rounded-full px-3 py-2">Follow</button>
+          </div>
+
+           </article>
+         
+         </div>
+
+       </section>
+
+       <!-- READING LIST -->
+        
+       <section class="w-[90%] mx-auto mt-10 ">
+          <h3 class="text-xl font-bold mt-1">My reading list</h3>
+          <div class="mt-3">
+             <article class="flex">
+
+                <div class="basis-4/12 p-1">
+
+                   <img class="object-cover rounded my-auto h-36" src="./images/michail-sapiton-alCEnNmzhPE-unsplash.jpg" alt="image">
+
+                </div>
+                <div class="basis-8/12 p-1">
+                   <h4 class="font-bold text-md">A Beginner's Guide to White Balance in Photography</h4>
+                   <p class="text-sm text-gray-400">Along with shutter speed, aperture,and ISO,white balance is one of the most</p>
+                   <div class="mt-2 flex items-center">
+                      <div class="w-10 h-10 rounded-full">
+
+                        <img class="mr-4 w-10 h-10 object-cover border border-black rounded-full" src="./images/acc-img.jpg" alt="">
+
+                      </div>
+                      <div class="ml-2">
+                        <p class="text-sm text-gray-700">Irene au <span>Apr 16,2022</span></p>
+                      </div>
+                   </div>
+                </div>
+
+             </article>
+
+             <article class="flex">
+
+              <div class="basis-4/12 p-1">
+
+                 <img class="object-cover rounded my-auto h-36" src="./images/michail-sapiton-alCEnNmzhPE-unsplash.jpg" alt="image">
+
+              </div>
+              <div class="basis-8/12 p-1">
+                 <h4 class="font-bold text-md">A Beginner's Guide to White Balance in Photography</h4>
+                 <p class="text-sm text-gray-400">Along with shutter speed, aperture,and ISO,white balance is one of the most</p>
+                 <div class="mt-2 flex items-center">
+                    <div class="w-10 h-10 rounded-full">
+
+                      <img class="mr-4 w-10 h-10 object-cover border border-black rounded-full" src="./images/acc-img.jpg" alt="">
+
+                    </div>
+                    <div class="ml-2">
+                      <p class="text-sm text-gray-700">Irene au <span>Apr 16,2022</span></p>
+                    </div>
+                 </div>
+              </div>
+
+           </article>
+
+           <article class="flex">
+
+            <div class="basis-4/12 p-1">
+
+               <img class="object-cover rounded my-auto h-36" src="./images/michail-sapiton-alCEnNmzhPE-unsplash.jpg" alt="image">
+
+            </div>
+            <div class="basis-8/12 p-1">
+               <h4 class="font-bold text-md">A Beginner's Guide to White Balance in Photography</h4>
+               <p class="text-sm text-gray-400">Along with shutter speed, aperture,and ISO,white balance is one of the most</p>
+               <div class="mt-2 flex items-center">
+                  <div class="w-10 h-10 rounded-full">
+
+                    <img class="mr-4 w-10 h-10 object-cover border border-black rounded-full" src="./images/acc-img.jpg" alt="">
+
+                  </div>
+                  <div class="ml-2">
+                    <p class="text-sm text-gray-700">Irene au <span>Apr 16,2022</span></p>
+                  </div>
+               </div>
+            </div>
+
+         </article>
+          </div>
+       </section>
+
+
+    </div>
+
+  </section>
+
+
+
+</body>
+</html>
